@@ -9,9 +9,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="debug">
-    <div id="search-bar" class="vw-100">
+<body data-bs-theme="dark">
+    <div id="search-bar" class="vw-100 bg-white text-dark">
+        <div class="h-100 container-fluid d-flex align-items-center gap-3">
+            <img class="d-none d-lg-block" src="img/logo.svg" alt="">
 
+            <img class="h-100 d-lg-none" src="img/mobile-logo.png" alt="">
+
+            <div class="input-group">
+                <span class="input-group-text _bg-personal-1 border border-0 pe-0" id="basic-addon1"><i class="fa-solid fa-magnifying-glass text-dark"></i></span>
+                <input type="text" class="form-control _bg-personal-1 border border-0 m-0" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Search" aria-describedby="basic-addon1">
+            </div>
+
+            <i class="fa-solid fa-list-ul d-none d-lg-block"></i>
+
+            <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
+
+            <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
+
+            <i class="fa-solid fa-bell text-warning"></i>
+        </div>
     </div>
 
     <main class="vw-100 d-flex">

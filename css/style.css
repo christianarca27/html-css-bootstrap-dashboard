@@ -3,6 +3,15 @@
     border: 1px solid red;
 }
 
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(0, 0, 0);
+    opacity: 0.8; /* Firefox */
+}
+
+._bg-personal-1 {
+    background-color: #e5e5e5;
+}
+
 body {
     background-color: #f8f9fa;
 }
