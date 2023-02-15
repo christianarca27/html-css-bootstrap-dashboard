@@ -1,0 +1,33 @@
+.debug * {
+    background-color: rgba(255, 0, 0, 0.3);
+    border: 1px solid red;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+#search-bar {
+    height: 70px;
+}
+
+main {
+     height: calc(100vh - 70px);
+}
+
+main nav {
+    width: 150px;
+}
+
+main #main-inner {
+    width: calc(100% - 150px);
+}
+
+main #main-inner header {
+    min-height: 200px;
+    /* debug */
+}
+
+main #main-inner #application-main {
+    
+}
