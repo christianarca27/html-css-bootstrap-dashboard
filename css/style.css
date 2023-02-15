@@ -39,8 +39,6 @@ main #main-inner {
 }
 
 main #main-inner header {
-    min-height: 200px;
-    /* debug */
 }
 
 main #main-inner #application-main {
