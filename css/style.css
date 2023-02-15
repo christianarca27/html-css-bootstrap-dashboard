@@ -16,6 +16,11 @@ body {
     background-color: #f8f9fa;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #search-bar {
     height: 70px;
 }
@@ -25,11 +30,12 @@ main {
 }
 
 main nav {
-    width: 150px;
+    background-image: url("../img/sidebar-bg.png");
+    width: 70px;
 }
 
 main #main-inner {
-    width: calc(100% - 150px);
+    width: calc(100% - 70px);
 }
 
 main #main-inner header {
@@ -39,4 +45,15 @@ main #main-inner header {
 
 main #main-inner #application-main {
     
+}
+
+@media screen and (min-width: 992px) {
+    main nav {
+        background-image: url("../img/sidebar-bg.png");
+        width: 150px;
+    }
+
+    main #main-inner {
+        width: calc(100% - 150px);
+    }
 }
