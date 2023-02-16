@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- search-bar -->
     <div id="search-bar" class="vw-100 bg-white text-dark">
         <div class="h-100 container-fluid d-flex align-items-center gap-3">
             <img class="d-none d-lg-block" src="img/logo.svg" alt="">
@@ -30,9 +31,13 @@
             <i class="fa-solid fa-bell text-warning"></i>
         </div>
     </div>
+    <!-- /search-bar -->
 
+    <!-- main -->
     <main class="vw-100 d-flex">
+        <!-- nav -->
         <nav data-bs-theme="dark" class="h-100 bg-primary-subtle text-white d-flex flex-column justify-content-between align-items-center align-items-lg-stretch py-4">
+            <!-- nav-top -->
             <div id="nav-top">
                 <div class="list-group">
                     <a class="list-group-item list-group-item-action d-flex border-0 bg-transparent" href="">
@@ -55,7 +60,9 @@
                     </a>
                 </div>
             </div>
+            <!-- /nav-top -->
 
+            <!-- nav-bottom -->
             <div id="nav-bottom">
                 <div class="list-group">
                     <a class="list-group-item list-group-item-action d-flex border-0 bg-transparent" href="">
@@ -66,12 +73,17 @@
                     </a>
                 </div>
             </div>
+            <!-- /nav-bottom -->
         </nav>
+        <!-- /nav -->
 
+        <!-- main-inner -->
         <div id="main-inner">
+            <!-- header -->
             <header class="bg-primary text-white py-3                                    ">
                 <div class="container-fluid">
                     <div class="row gap-3 gap-md-0">
+                        <!-- new-student -->
                         <div class="col-12 col-md-4 order-md-last col-lg-2">
                             <div class="d-flex align-items-center gap-2">
                                 <span>Nuovo Studente</span>
@@ -80,6 +92,9 @@
                                 </button>
                             </div>
                         </div>
+                        <!-- /new-student -->
+
+                        <!-- breadcrumb -->
                         <div class="col-12 col-md-4 col-lg-6">
                             <div class="d-flex align-items-end gap-2 mb-2">
                                 <h1 class="m-0">Boolean</h1>
@@ -119,22 +134,32 @@
                                   </div>
                             </div>
                         </div>
+                        <!-- /breadcrumb -->
+
+                        <!-- online-students-counter -->
                         <div class="col-12 col-md-4 col-lg-4">
                             <div>Studenti online negli ultimi 30 minuti</div>
                             <div id="studenti-online" class="fs-2">
                                 125
                             </div>
                         </div>
+                        <!-- /online-students-counter -->
                     </div>
                 </div>
             </header>
+            <!-- /header -->
 
+            <!-- application-main -->
             <div id="application-main">
                 
             </div>
+            <!-- /application-main -->
         </div>
+        <!-- /main-inner -->
     </main>
-                                
+    <!-- /main -->
+          
+    <!-- offcanvas -->
     <div class="offcanvas offcanvas-end _offcanvas-personal bg-white text-black" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title text-black" id="offcanvasLabel">Inserisci un nuovo studente</h5>
@@ -206,6 +231,7 @@
               <button type="button" class="btn btn-warning">Svuota</button>
           </div>
     </div>
+    <!-- /offcanvas -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

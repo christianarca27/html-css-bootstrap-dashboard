@@ -51,13 +51,6 @@ main #main-inner {
     width: calc(100% - 70px);
 }
 
-main #main-inner header {
-}
-
-main #main-inner #application-main {
-    
-}
-
 @media screen and (min-width: 992px) {
     .offcanvas._offcanvas-personal {
         width: 40%;
