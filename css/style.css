@@ -42,17 +42,15 @@ a {
     height: 70px;
 }
 
-main {
-     height: calc(100vh - 70px);
-}
-
 main nav {
     background-image: url("../img/sidebar-bg.png");
     width: 70px;
+    height: calc(100vh - 70px);
 }
 
 main #main-inner {
-    width: calc(100% - 70px);
+    width: 100%;
+    height: calc(100% - 70px);
 }
 
 @media screen and (min-width: 992px) {
@@ -63,9 +61,5 @@ main #main-inner {
     main nav {
         background-image: url("../img/sidebar-bg.png");
         width: 150px;
-    }
-
-    main #main-inner {
-        width: calc(100% - 150px);
     }
 }
