@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-bs-theme="dark">
+<body>
     <div id="search-bar" class="vw-100 bg-white text-dark">
         <div class="h-100 container-fluid d-flex align-items-center gap-3">
             <img class="d-none d-lg-block" src="img/logo.svg" alt="">
@@ -32,7 +32,7 @@
     </div>
 
     <main class="vw-100 d-flex">
-        <nav class="h-100 bg-primary-subtle text-white d-flex flex-column justify-content-between align-items-center align-items-lg-stretch ps-lg-3 py-4">
+        <nav data-bs-theme="dark" class="h-100 bg-primary-subtle text-white d-flex flex-column justify-content-between align-items-center align-items-lg-stretch ps-lg-3 py-4">
             <div id="nav-top">
                 <ul class="nav d-flex flex-column gap-3">
                     <li class="nav-item">
@@ -73,27 +73,56 @@
         </nav>
 
         <div id="main-inner">
-            <header class="bg-primary text-white py-3">
+            <header class="bg-primary text-white py-3                                    ">
                 <div class="container-fluid">
                     <div class="row gap-3 gap-md-0">
                         <div class="col-12 col-md-4 order-md-last col-lg-2">
                             <div class="d-flex align-items-center gap-2">
                                 <span>Nuovo Studente</span>
-                                <i class="fa-regular fa-square-plus fa-3x"></i>
+                                <button class="btn btn-primary p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                    <div class="border border-1 border-white rounded-2 fs-4 px-3 pb-1">&plus;</div>
+                                </button>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 col-lg-6">
-                            <div class="d-flex align-items-end">
+                            <div class="d-flex align-items-end gap-2 mb-2">
                                 <h1 class="m-0">Boolean</h1>
-                                <span>Piano blaze</span>
+                                <span class="badge rounded-pill _bg-personal-2 fw-light">Piano blaze</span>
                             </div>
                             <div>
-                                <span>3 app</span>
-                                <span>&raquo;</span>
-                                <span class="d-lg-none">&plus;</span>
-                                <span class="d-none d-lg-inline">Boolean mobile app</span>
-                                <span class="d-none d-lg-inline">Boolean web app</span>
-                                <span class="d-none d-lg-inline">Boolean blog app</span>
+                                <div style="--bs-breadcrumb-divider: '\00bb';" aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="#">
+                                                <span class="badge rounded-pill _bg-personal-2 fw-light">3 app</span>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <ul class="_simple-list d-flex gap-1">
+                                                <li class="d-none d-lg-inline">
+                                                    <a href="">
+                                                        <span class="badge rounded-pill _bg-personal-2 fw-light">Boolean mobile app</span>
+                                                    </a>
+                                                </li>
+                                                <li class="d-none d-lg-inline">
+                                                    <a href="">
+                                                        <span class="badge rounded-pill _bg-personal-2 fw-light">Boolean web app</span>
+                                                    </a>
+                                                </li>
+                                                <li class="d-none d-lg-inline">
+                                                    <a href="">
+                                                        <span class="badge rounded-pill _bg-personal-2 fw-light">Boolean blog app</span>
+                                                    </a>
+                                                </li>
+                                                <li class="d-lg-none">
+                                                    <a href="">
+                                                        <span class="badge rounded-pill _bg-personal-2 fw-light">&plus;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                  </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 col-lg-4">
@@ -111,5 +140,7 @@
             </div>
         </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
