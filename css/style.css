@@ -46,11 +46,16 @@ main nav {
     background-image: url("../img/sidebar-bg.png");
     width: 70px;
     height: calc(100vh - 70px);
+
+    top: 70px;
 }
 
 main #main-inner {
-    width: 100%;
+    width: calc(100% - 70px);
     height: calc(100% - 70px);
+    
+    top: 70px;
+    left: 70px;
 }
 
 @media screen and (min-width: 992px) {
@@ -61,5 +66,10 @@ main #main-inner {
     main nav {
         background-image: url("../img/sidebar-bg.png");
         width: 150px;
+    }
+
+    main #main-inner {
+        width: calc(100% - 150px);
+        left: 150px;
     }
 }
