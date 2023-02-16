@@ -21,6 +21,10 @@
     padding-inline-start: 0;
 }
 
+.offcanvas._offcanvas-personal {
+    width: 100%;
+}
+
 body {
     background-color: #f8f9fa;
 }
@@ -55,6 +59,10 @@ main #main-inner #application-main {
 }
 
 @media screen and (min-width: 992px) {
+    .offcanvas._offcanvas-personal {
+        width: 40%;
+    }
+
     main nav {
         background-image: url("../img/sidebar-bg.png");
         width: 150px;
